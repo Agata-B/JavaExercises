@@ -1,0 +1,28 @@
+1)
+Utwórz klasę o nazwie Meeting.
+2)
+Klasa powinna posiadać pola:
+•
+String description opis spotkania
+•
+LocalDate date data spotkania
+•
+String address adres
+•
+int size ilość osób, które może pomieścić sala
+3)
+Utwórz gettery i settery
+4)
+Konstruktor dwuparametrowy, który przyjmuję informacje tylko o opisie spotkania oraz adresie. Data spotkania powinna być usta wia na
+domyślnie na aktualny dzień, natomiast domyślna ilość osób jaką może pomieścić sala to 18.
+5)
+Konstruktor czteroparametrowy.
+6)
+Utwórz metodę wewnątrz klasy, która zwróci String z opisem spotkania.
+7)
+Utwórz metodę delayMeeting int days )), która opóźni datę spotkania i podaną ilość
+8)
+Za pomocą metody main zaprezentuj działanie metod.
+9)
+9)*Stwórz tablice spotkań i uzupełnij ją. Następnie wszystkim spotkaniom z tablicy ustaw size na losową liczbę z zakresu 50 80. Wyświetl opis
+wszystkich spotkań z tablicy
