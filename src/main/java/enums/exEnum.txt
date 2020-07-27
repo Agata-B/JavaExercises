@@ -1,0 +1,14 @@
+Enum
+zadanie
+
+Stwórz enum ProductType name , code
+
+W metodzie main wyświetl wszystkie dostępne wartości enum’a
+
+Stwórz klasę Product( name , price , weight , productType ). Typ
+zmiennej productType to wcześniej utworzony enum
+
+Utwórz ProductService a w nim metodę retrieveFruits (List<Product>
+products), która zwróci tylko owoce.
+
+Testy jednostkowe jak zwykle mile widziane
