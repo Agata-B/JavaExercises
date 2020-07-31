@@ -1,11 +1,11 @@
-package collections;
+package collections.ex1;
 
 import org.apache.commons.lang3.RandomUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
 
         List<Integer> integerTab = new ArrayList<>();

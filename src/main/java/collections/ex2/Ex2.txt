@@ -1,0 +1,15 @@
+Zadanie 2
+1.
+Stwórz klasę Clinic , reprezentującą
+2.
+Klasa, jako pole powinna zawierać kolejkę imion pacjentów.
+3.
+W Clinic utwórz metodę registerPatient (String name ), która doda pacjenta do
+4.
+Dodaj kolejną metodę String handlePatient (), która zwróci imię obsługiwanego pacjenta i
+usunie go z kolejki.
+5.
+Przetestuj przychodnie za pomocą testów jednostkowych.
+6.
+6.*Rozszerz system o klasę Doctor zawierającą oprócz danych osobowych, historię wizyt.
+Forma dowolna.
