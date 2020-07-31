@@ -1,0 +1,12 @@
+Zadanie 1
+
+1.
+W metodzie main utwórz listę liczb całkowitych.
+2.
+Wypełnij ją dwudziestoma wylosowanymi liczbami z zakresu <0, 10>.
+3.
+Wyświetl zawartość listy.
+4.
+Usuń z listy wszystkie liczby parzyste.
+5.
+Wyświetl zawartość listy.
