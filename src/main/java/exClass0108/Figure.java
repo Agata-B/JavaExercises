@@ -9,3 +9,4 @@ public interface Figure {
         return this.getClass().getSimpleName() + " pole: " + this.fieldFigure() + " obwód: " + this.perimeterOfTheFigure();
     }
 }
+// todo przetestowac - dodc mockito do dependency i ogarnac testy
