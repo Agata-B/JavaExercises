@@ -3,15 +3,14 @@ package exClass0108;
 import lombok.Getter;
 
 @Getter
-public class Triangle implements SuperFigure{
+public class Triangle extends AbstractSuperFigure {
 
+    private double hypotenuse;
     private double baseTriangle;
     private double sideBTriangle;
     private double sideCTriangle;
     private double highTriangle;
-    private Colour colour;
-    private double x;
-    private double y;
+
 
     public Triangle(double baseTriangle, double sideBTriangle, double sideCTriangle, double highTriangle) {
         this.baseTriangle = baseTriangle;
@@ -20,40 +19,48 @@ public class Triangle implements SuperFigure{
         this.highTriangle = highTriangle;
     }
 
+    public Triangle(Builder builder) {
+        this.baseTriangle = builder.base;
+        this.colour = builder.colour;
+        this.highTriangle = builder.height;
+        this.x = builder.x;
+        this.y = builder.y;
+    }
+
+    public Triangle(double base, double height) {
+        this.baseTriangle = base;
+        this.highTriangle = height;
+        this.hypotenuse = Math.sqrt(this.baseTriangle * this.baseTriangle + this.highTriangle * this.highTriangle);
+    }
+
+
     @Override
     public double perimeterOfTheFigure() {
-        return baseTriangle+sideBTriangle+sideCTriangle;
+        return baseTriangle + sideBTriangle + sideCTriangle;
     }
 
     @Override
     public double fieldFigure() {
 
-        return (baseTriangle*highTriangle)/2;
+        return (baseTriangle * highTriangle) / 2;
     }
 
-    @Override
-    public void setColour(Colour colour) {
-        this.colour = colour;
-    }
 
-    @Override
-    public Colour getColour() {
-        return this.colour;
-    }
 
-    @Override
-    public void positionTheFigure(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
+    public static class Builder {
 
-    @Override
-    public double getX() {
-        return this.x;
-    }
+        private Colour colour;
+        private double height;
+        private double x;
+        private double y;
+        private double base;
 
-    @Override
-    public double getY() {
-        return this.y;
+        Triangle build() {
+            return new Triangle(this);
+        }
+
+
+        // TODO: Proszę zaimplementować metody buildera
+
     }
 }

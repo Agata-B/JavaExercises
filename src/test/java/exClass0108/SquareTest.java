@@ -1,8 +1,5 @@
-package exClss0108;
+package exClass0108;
 
-
-import exClass0108.Colourable;
-import exClass0108.Square;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -39,7 +36,7 @@ public class SquareTest {
 
     @Test
     void shouldSetCoordinates() {
-        testSquare.positionTheFigure(TEST_X, TEST_Y);
+        testSquare.setPositionTheFigure(TEST_X, TEST_Y);
         assertEquals(TEST_X, testSquare.getX());
         assertEquals(TEST_Y, testSquare.getY());
     }

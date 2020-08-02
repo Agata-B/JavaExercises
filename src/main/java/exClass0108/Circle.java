@@ -3,14 +3,14 @@ package exClass0108;
 import lombok.Getter;
 
 @Getter
-public class Circle implements SuperFigure {
+public class Circle extends AbstractSuperFigure {
 
 
     public static final Double PI = Double.valueOf(Math.PI);
     private double radius;
-    private Colour colour;
-    private double x;
-    private double y;
+
+    public Circle() {
+    }
 
     public Circle(double radius) {
         this.radius = radius;
@@ -26,29 +26,37 @@ public class Circle implements SuperFigure {
         return PI * (radius * radius);
     }
 
-    @Override
-    public void setColour(Colour colour) {
-        this.colour = colour;
+
+    public static class Builder {
+
+        private final Circle prototype;
+
+        public Builder() {
+            prototype = new Circle();
+        }
+
+        Circle build(){
+            if (prototype.radius <= 0) {
+                throw new IllegalStateException("Circle radius must be greater than zero");
+            }
+            return prototype;
+        }
+
+        Builder withRadius(double radius) {
+            prototype.radius = radius;
+            return this;
+        }
+
+        Builder withColour(Colour colour) {
+            prototype.colour = colour;
+            return this;
+        }
+
+        Builder withCoordinates(double x, double y) {
+            prototype.x = x;
+            prototype.y = y;
+            return this;
+        }
     }
 
-    @Override
-    public Colour getColour() {
-        return this.colour;
-    }
-
-    @Override
-    public void positionTheFigure(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    @Override
-    public double getX() {
-        return this.x;
-    }
-
-    @Override
-    public double getY() {
-        return this.y;
-    }
 }
