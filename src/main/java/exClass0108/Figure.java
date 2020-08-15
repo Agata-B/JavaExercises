@@ -6,7 +6,13 @@ public interface Figure {
     double fieldFigure();
 
     default String preparationDescription(){
-        return this.getClass().getSimpleName() + " pole: " + this.fieldFigure() + " obwód: " + this.perimeterOfTheFigure();
+        return this.getType() +
+                " pole: " + this.fieldFigure() +
+                " obwód: " + this.perimeterOfTheFigure();
     }
+
+   default String getType() {
+        return this.getClass().getSimpleName();
+   }
 }
 // todo przetestowac - dodc mockito do dependency i ogarnac testy

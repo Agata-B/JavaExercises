@@ -1,25 +1,23 @@
 package exClass0108;
 
-public abstract class AbstractSuperFigure implements SuperFigure{
+public abstract class AbstractSuperFigure implements SuperFigure {
 
     protected Colour colour;
     protected double x;
     protected double y;
 
+
     @Override
-    public void setColour(Colour colour) {
-        this.colour = colour;
+    public String preparationDescription() {
+        return SuperFigure.super.preparationDescription() +
+                " kolor " + this.getColour() +
+                String.format("pozycja (%f, %f)",
+                        this.getX(), this.getY());
     }
 
     @Override
     public Colour getColour() {
         return this.colour;
-    }
-
-    @Override
-    public void setPositionTheFigure(double x, double y) {
-        this.x = x;
-        this.y = y;
     }
 
     @Override
