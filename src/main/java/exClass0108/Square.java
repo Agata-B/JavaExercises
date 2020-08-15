@@ -7,13 +7,7 @@ public class Square extends AbstractSuperFigure {
 
     private double lengthSideSquare;
 
-
-    private Square() {
-    }
-
-    public Square(double lengthSideSquare) {
-        this.lengthSideSquare = lengthSideSquare;
-    }
+    private Square(){ }
 
     @Override
     public double perimeterOfTheFigure() {
@@ -31,7 +25,7 @@ public class Square extends AbstractSuperFigure {
         private Square instance;
 
         public Builder() {
-            instance = new Square();
+           instance = new Square();
         }
 
         public Square build() {
@@ -55,6 +49,5 @@ public class Square extends AbstractSuperFigure {
             instance.setPositionTheFigure(x, y);
             return this;
         }
-
     }
 }

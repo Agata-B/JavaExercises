@@ -20,7 +20,7 @@ public class Main {
         double sideCTriangle = scanner.nextDouble();
         System.out.println("Podaj wysokość trójkąta.");
         double highTriangle = scanner.nextDouble();
-        figures[1] = new Triangle(baseTriangle, sideBTriangle, sideCTriangle, highTriangle);
+        figures[1] = new RightTriangle(baseTriangle, sideBTriangle, sideCTriangle, highTriangle);
 
 
         System.out.println("Podaj długość boku kwadratu.");
