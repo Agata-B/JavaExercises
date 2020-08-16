@@ -1,4 +1,4 @@
-package exClass0108;
+package Figures;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,10 @@ class RightTriangleTest {
 
     @BeforeEach
     void setUp() {
-        testRightTriangle = new RightTriangle(BASE, HEIGHT);
+        testRightTriangle = new RightTriangle.Builder()
+        .withBase(BASE)
+        .withHeight(HEIGHT)
+        .build();
     }
 
     @Test

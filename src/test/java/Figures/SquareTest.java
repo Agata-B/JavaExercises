@@ -1,4 +1,4 @@
-package exClass0108;
+package Figures;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,14 +36,12 @@ public class SquareTest {
 
     @Test
     void shouldSetCoordinates() {
-        testSquare.setPositionTheFigure(TEST_X, TEST_Y);
         assertEquals(TEST_X, testSquare.getX());
         assertEquals(TEST_Y, testSquare.getY());
     }
 
     @Test
     void shouldSedColour() {
-        testSquare.setColour(TEST_COLOUR);
         assertEquals(TEST_COLOUR, testSquare.getColour());
     }
 }

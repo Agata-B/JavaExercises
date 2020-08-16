@@ -1,4 +1,4 @@
-package exClass0108;
+package Figures;
 
 public interface Colourable {
 
