@@ -12,10 +12,6 @@ public class Circle extends AbstractSuperFigure {
     public Circle() {
     }
 
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
     @Override
     public double perimeterOfTheFigure() {
         return 2 * PI * radius;
@@ -25,7 +21,6 @@ public class Circle extends AbstractSuperFigure {
     public double fieldFigure() {
         return PI * (radius * radius);
     }
-
 
     public static class Builder {
 

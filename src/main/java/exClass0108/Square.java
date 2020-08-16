@@ -7,7 +7,8 @@ public class Square extends AbstractSuperFigure {
 
     private double lengthSideSquare;
 
-    private Square(){ }
+    private Square() {
+    }
 
     @Override
     public double perimeterOfTheFigure() {
@@ -19,13 +20,12 @@ public class Square extends AbstractSuperFigure {
         return lengthSideSquare * lengthSideSquare;
     }
 
-
     public static class Builder {
 
         private Square instance;
 
         public Builder() {
-           instance = new Square();
+            instance = new Square();
         }
 
         public Square build() {
@@ -46,7 +46,8 @@ public class Square extends AbstractSuperFigure {
         }
 
         public Builder withCoordinates(double x, double y) {
-            instance.setPositionTheFigure(x, y);
+            instance.x = x;
+            instance.y = y;
             return this;
         }
     }

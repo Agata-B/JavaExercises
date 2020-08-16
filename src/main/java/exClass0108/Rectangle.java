@@ -3,7 +3,7 @@ package exClass0108;
 import lombok.Getter;
 
 @Getter
-public class Rectangle extends AbstractSuperFigure {
+public final class Rectangle extends AbstractSuperFigure {
 
     private double longerSideRectangle;
     private double shortSideRectangle;
@@ -62,6 +62,4 @@ public class Rectangle extends AbstractSuperFigure {
             return this;
         }
     }
-
-
 }

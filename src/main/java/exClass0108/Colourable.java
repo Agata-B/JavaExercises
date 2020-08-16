@@ -7,9 +7,6 @@ public interface Colourable {
         GREEN, TURQUOISE, YELLOW, PINK;
     }
 
-
-    void setColour(Colour colour);
-
-    Colour getColour();
+     Colour getColour();
 
 }

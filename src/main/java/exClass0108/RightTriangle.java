@@ -29,7 +29,6 @@ public class RightTriangle extends AbstractSuperFigure {
         return (baseTriangle * highTriangle) / 2;
     }
 
-
     public static class Builder {
 
         private Colour colour;

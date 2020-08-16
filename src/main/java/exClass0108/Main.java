@@ -1,12 +1,13 @@
 package exClass0108;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) {
 
         Figure[] figures = new Figure[4];
-
+final Logger logger = Logger.getInstance();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj długość promienia koła.");
