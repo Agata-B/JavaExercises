@@ -8,12 +8,15 @@ import java.util.stream.IntStream;
 public class Main4 {
     public static void main(String[] args) {
 
-        ExecutorService executor = Executors.newFixedThreadPool(2);
+        Executor executor = Executors.newFixedThreadPool(2);
 
-        IntStream.range(1,10)
+    /*    IntStream.range(1,10)
                 .mapToObj(i->new ThreadPlaygroundRunnable("name " +i))
                 .forEach(t ->executor.submit(t));
+    */
 
-        executor.shutdown();
+        for (int i = 0; i <10 ; i++) {
+            executor.execute(new ThreadPlaygroundRunnable("name "+ i));
+        }
     }
 }
