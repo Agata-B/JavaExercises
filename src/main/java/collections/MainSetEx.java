@@ -20,5 +20,7 @@ public class MainSetEx {
         } while (!name.equals("-"));             //close loops
 
         System.out.println("Liczba dodanych unikalnych imion " + names.size());
+
+
     }
 }
